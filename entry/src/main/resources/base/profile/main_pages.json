@@ -1,0 +1,8 @@
+{
+    "src": [
+        "pages/Index",
+        "graphics3d/SimpleScene",
+        "graphics3d/ShowImage",
+        "test/RunTest"
+    ]
+}

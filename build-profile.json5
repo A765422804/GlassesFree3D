@@ -1,0 +1,56 @@
+{
+    "app": {
+        "signingConfigs": [
+            {
+                "name": "default",
+                "type": "HarmonyOS",
+                "material": {
+                    "certpath": "/Users/heartsea/.ohos/config/default_GlassesFree3D_xnolY9uRMNi1GNgFxTu_H7FibDHOpp6h2llHmih8_uo=.cer",
+                    "keyAlias": "debugKey",
+                    "keyPassword": "0000001B0FF2BF049F2F62BFFF968A40E397BF6C29B6AAF13BF9545C0637F67FB8AD68662CBE553DBFB6E8",
+                    "profile": "/Users/heartsea/.ohos/config/default_GlassesFree3D_xnolY9uRMNi1GNgFxTu_H7FibDHOpp6h2llHmih8_uo=.p7b",
+                    "signAlg": "SHA256withECDSA",
+                    "storeFile": "/Users/heartsea/.ohos/config/default_GlassesFree3D_xnolY9uRMNi1GNgFxTu_H7FibDHOpp6h2llHmih8_uo=.p12",
+                    "storePassword": "0000001B902616D192EB6F93729B2DCF943DCFDED3553E79B100DFFC31DF81F5DE7C75FBF6860334C34D72"
+                }
+            }
+        ],
+        "products": [
+            {
+                "name": "default",
+                "signingConfig": "default",
+                "targetSdkVersion": "5.1.1(19)",
+                "compatibleSdkVersion": "5.1.1(19)",
+                "runtimeOS": "HarmonyOS",
+                "buildOption": {
+                    "strictMode": {
+                        "caseSensitiveCheck": true,
+                        "useNormalizedOHMUrl": true
+                    }
+                }
+            }
+        ],
+        "buildModeSet": [
+            {
+                "name": "debug",
+            },
+            {
+                "name": "release"
+            }
+        ]
+    },
+    "modules": [
+        {
+            "name": "entry",
+            "srcPath": "./entry",
+            "targets": [
+                {
+                    "name": "default",
+                    "applyToProducts": [
+                        "default"
+                    ]
+                }
+            ]
+        }
+    ]
+}
