@@ -5,6 +5,17 @@ import { BusinessError } from '@kit.BasicServicesKit';
 @Component
 struct Index
 {
+    aboutToAppear(): void
+    {
+        this.getUIContext()
+            .getRouter()
+            .pushUrl({ url: "graphics3d/ShowImage" }, router.RouterMode.Single)
+            .catch((error: BusinessError) =>
+            {
+                console.error(`pushUrl failed, code is ${error.code}, message is ${error.message}`);
+            })
+    }
+
     build()
     {
         Column()

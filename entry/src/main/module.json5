@@ -46,11 +46,6 @@
                     }
                 ],
             }
-        ],
-        "requestPermissions": [
-            {
-                "name": "ohos.permission.GYROSCOPE"
-            }
         ]
     }
 }
